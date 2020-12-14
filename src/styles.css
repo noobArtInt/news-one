@@ -1,0 +1,139 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  width: 30%;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+  background-color: lightseagreen;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.container {
+  padding: 2px 16px;
+}
+input {
+  padding: 10px;
+  margin: 10px;
+  width: 90%;
+  border-width: 3px;
+  border-radius: 10px;
+}
+
+h1 {
+  background-color: purple;
+  color: white;
+  margin-bottom: 10px;
+  padding: 100px 10px 20px 30px;
+}
+
+h2 {
+  margin-top: 100px;
+  background-color: purple;
+  color: white;
+  margin-bottom: 10px;
+  padding: 100px 10px 20px 30px;
+}
+p {
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card1 {
+  box-shadow: 4px 4px 8px 0 rgba(1, 0, 1, 0.5);
+  margin: 10px;
+  width: 40%;
+  border-radius: 20px;
+  background-color: lightcyan;
+}
+.up {
+  box-shadow: 4px 4px 8px 0 rgba(0, 3, 10, 0.5);
+  border-radius: 10px;
+  width: 40%;
+  margin: 10px;
+  color: hsla(60, 3%, 83%, 0.747);
+  background-color: rgb(22, 113, 119);
+}
+img {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+}
+.down {
+  box-shadow: 4px 4px 8px 0 rgba(0, 3, 10, 0.5);
+  border-radius: 10px;
+  width: 40%;
+  margin: 10px;
+  color: rgb(213, 214, 209);
+  background-color: #9b3333;
+}
+.feature-img img {
+  width: 100%;
+}
+.feature-img {
+  position: relative;
+}
+.feature-details {
+  padding: 10px;
+  text-align: justify;
+}
+.feature-details h4 {
+  font-weight: 500;
+}
+.feature-box {
+  box-shadow: 0 0 10px 1px rgba(37, 73, 214, 0.18);
+  margin-left: 30px;
+  text-align: center;
+}
+.col-md-4 {
+  width: 40%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 120px;
+}
+.info {
+  color: #922c1380;
+  font-weight: bold;
+}
+.flip-card {
+  background-color: transparent;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  background-color: #2d008080;
+}
